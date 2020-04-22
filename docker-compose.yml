@@ -1,0 +1,7 @@
+services:
+  api:
+    build: { context: ., dockerfile: backend/Dockerfile }
+    ports: ['7200:7200']
+  web:
+    build: { context: ., dockerfile: web/Dockerfile }
+    ports: ['8080:80']
